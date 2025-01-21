@@ -21,7 +21,7 @@ The objective of this SOC (Security Operations Center) automation project is to 
 - **Python:** The primary language used for scripting and automation.
 
 ## Steps
-- **Project Planning:** Define project goals based on the MyDFIR series and determine the scope of the home lab setup.
+- **Project Planning:** Determine the scope of the home lab setup.
 - **Tool Selection:** Select Wazuh, TheHive, and Shuffle as demonstrated in the series.
 - **Environment Setup:** Follow the series to set up the home lab environment, including SIEM and incident response platforms.
 - **Scripting:** Develop Python scripts to automate security tasks.
