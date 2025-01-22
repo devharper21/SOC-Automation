@@ -33,3 +33,6 @@ The objective of this SOC (Security Operations Center) automation project is to 
 - **Continuous Improvement:** Iterate on the system by collecting feedback, analyzing performance, and making improvements as demonstrated in the series.
 
 *Ref 1: Network Diagram*
+
+![image](https://github.com/user-attachments/assets/6723cf34-4eca-471d-ae1c-6204f4e98ef5)
+
