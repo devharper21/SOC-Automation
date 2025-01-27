@@ -34,5 +34,6 @@ The objective of this SOC (Security Operations Center) automation project is to 
 
 *Ref 1: Network Diagram*
 
-![image](https://github.com/user-attachments/assets/6723cf34-4eca-471d-ae1c-6204f4e98ef5)
+![image](https://github.com/user-attachments/assets/17529d05-8562-4c17-a0ad-480ca0fd7e43)
+
 
