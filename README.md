@@ -2,23 +2,22 @@
 
 ## Objective
 
-The objective of this SOC (Security Operations Center) automation project is to design and implement a system that automates repetitive and time-consuming security tasks, enhances threat detection and response, and improves the overall efficiency of SOC operations. This project aims to integrate various security tools and develop custom scripts or playbooks that streamline the incident management lifecycle, from detection to resolution. 
+Design and implement an automated Security Operations Center (SOC) environment to detect, analyze, and respond to simulated security incidents. The project aimed to integrate multiple cybersecurity tools into a cohesive workflow, reducing manual investigation time and demonstrating the power of Security Orchestration, Automation, and Response (SOAR) in threat management.
 
 ### Skills Learned
 
-- **Security Information and Event Management (SIEM):** Practical experience with configuring and using Wazuh as a SIEM platform.
-- **Threat Intelligence Integration:** Techniques for incorporating threat intelligence feeds into the SOC workflow.
-- **API Integration:** Using REST APIs to connect and manage interactions between different security tools.
-- **Incident Response Playbooks:** Developing and automating playbooks for handling various security incidents.
-- **Continuous Monitoring and Alerting:** Setting up and fine-tuning monitoring and alerting mechanisms for real-time security event detection.
-- **Cloud Security:** Applying cloud security practices within the context of a home lab setup.
+- **SOC workflows: alert triage, incident correlation, and response automation.
+- **Log ingestion, parsing, and security event correlation.
+- **Creating automated playbooks for incident investigation.
+- **Integrating SIEM, SOAR, and case management systems.
+- **Threat intelligence enrichment and API integration.
+- **Hands-on experience with alert lifecycle management.
 
 ### Tools Used
 
 - **Wazuh:** SIEM platform for log management and threat detection, as demonstrated in the series.
 - **TheHive:** Incident response platform for managing and tracking security incidents.
 - **Shuffle:** Workflow automation tool for orchestrating and connecting various security tools.
-- **Python:** The primary language used for scripting and automation.
 
 ## Steps
 - **Project Planning:** Determine the scope of the home lab setup.
