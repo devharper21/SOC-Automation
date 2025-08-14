@@ -20,17 +20,29 @@ Design and implement an automated Security Operations Center (SOC) environment t
 - **Shuffle:** Workflow automation tool for orchestrating and connecting various security tools.
 
 ## Steps
-- **Project Planning:** Determine the scope of the home lab setup.
-- **Tool Selection:** Select Wazuh, TheHive, and Shuffle as demonstrated in the series.
-- **Environment Setup:** Follow the series to set up the home lab environment, including SIEM and incident response platforms.
-- **Scripting:** Develop Python scripts to automate security tasks.
-- **Playbook Development:** Create and test automated incident response playbooks based on scenarios from the series.
-- **Integration:** Integrate Wazuh, TheHive, and Shuffle to create cohesive automation workflows.
-- **Testing:** Conduct tests to ensure all automated processes work correctly and handle various incidents as expected.
-- **Deployment:** Deploy the automated SOC system within the home lab, ensuring all components function as a unified system.
-- **Monitoring and Maintenance:** Establish monitoring protocols for the automated system and perform regular updates and maintenance.
-- **Continuous Improvement:** Iterate on the system by collecting feedback, analyzing performance, and making improvements as demonstrated in the series.
+1. **Environment Setup**
+   - Built a virtual lab using VirtualBox and Ubuntu servers.
+   - Installed and configured Wazuh Manager and Wazuh agents on test endpoints.
+2. **Log Collection & Detection**
+   - Ingested logs from multiple sources (Windows event logs, Linux syslogs, and simulated attack traffic).
+   - Configured Wazuh rules to detect suspicious activities such as brute-force attempts, malware signatures, and privilege escalations.
+3. **Incident Management Integration**
+   - Connected Wazuh alerts to TheHive via webhook/API for automated case creation.
+   - Mapped alert fields to incident fields in TheHive for structured triage.
+4. **Automation & Playbook Design**
+   - Used Shuffle to create automated workflows that:
+    - Parse Wazuh alerts.
+    - Query external threat intelligence sources (VirusTotal, AbuseIPDB, etc.).
+    - Enrich incident cases in TheHive with IOC context.
+    - Automatically assign cases to analysts.
+5. **Testing & Validation**
+   - Simulated attacks using tools like Kali Linux and Metasploit.
+   - Verified alerts triggered in Wazuh, cases created in TheHive, and enrichment executed via Shuffle.
+6. **Documentation & GitHub Publishing**
+   - Created step-by-step project documentation, diagrams, and screenshots.
+   - Uploaded configuration files, playbooks, and workflow exports to GitHub for portfolio demonstration.
 
+   
 *Ref 1: Network Diagram*
 
 ![image](https://github.com/user-attachments/assets/17529d05-8562-4c17-a0ad-480ca0fd7e43)
