@@ -6,12 +6,12 @@ Design and implement an automated Security Operations Center (SOC) environment t
 
 ### Skills Learned
 
-- **SOC workflows: alert triage, incident correlation, and response automation.
-- **Log ingestion, parsing, and security event correlation.
-- **Creating automated playbooks for incident investigation.
-- **Integrating SIEM, SOAR, and case management systems.
-- **Threat intelligence enrichment and API integration.
-- **Hands-on experience with alert lifecycle management.
+- SOC workflows: alert triage, incident correlation, and response automation.
+- Log ingestion, parsing, and security event correlation.
+- Creating automated playbooks for incident investigation.
+- Integrating SIEM, SOAR, and case management systems.
+- Threat intelligence enrichment and API integration.
+- Hands-on experience with alert lifecycle management.
 
 ### Tools Used
 
