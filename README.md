@@ -6,41 +6,46 @@ Design and implement an automated Security Operations Center (SOC) environment t
 
 ### Skills Learned
 
-- SOC workflows: alert triage, incident correlation, and response automation.
-- Log ingestion, parsing, and security event correlation.
-- Creating automated playbooks for incident investigation.
-- Integrating SIEM, SOAR, and case management systems.
-- Threat intelligence enrichment and API integration.
-- Hands-on experience with alert lifecycle management.
+- EDR configuration, monitoring, and alert handling.
+- SOC workflows: detection, triage, investigation, and automated remediation.
+- Playbook creation for SOAR-based automated actions.
+- Threat intelligence integration using APIs.
+- Hands-on experience simulating and analyzing endpoint threats.
+- Security tool integration and API-based data exchange.
 
 ### Tools Used
 
-- **Wazuh:** SIEM platform for log management and threat detection, as demonstrated in the series.
-- **TheHive:** Incident response platform for managing and tracking security incidents.
-- **Shuffle:** Workflow automation tool for orchestrating and connecting various security tools.
+- **Vultr** – Endpoint detection, investigation, and live forensics.
+- **Wazuh** – SIEM for centralized log collection and alerting.
+- **TheHive** – Incident and case management platform.
+- **Shuffle** – SOAR platform for automation and enrichment workflows.
+- **VirusTotal** – Threat intelligence API for IOC enrichment.
 
 ## Steps
 1. **Environment Setup**
    - Built a virtual lab using VirtualBox and Ubuntu servers.
-   - Installed and configured Wazuh Manager and Wazuh agents on test endpoints.
-2. **Log Collection & Detection**
-   - Ingested logs from multiple sources (Windows event logs, Linux syslogs, and simulated attack traffic).
-   - Configured Wazuh rules to detect suspicious activities such as brute-force attempts, malware signatures, and privilege escalations.
+   - Installed and configured Vultr as the EDR solution to monitor endpoint activity.
+2. **SIEM Integration**
+   - Deployed Wazuh Manager on a dedicated server.
+   - Configured Velociraptor and endpoint logs to be forwarded to Wazuh for alert generation.
 3. **Incident Management Integration**
-   - Connected Wazuh alerts to TheHive via webhook/API for automated case creation.
-   - Mapped alert fields to incident fields in TheHive for structured triage.
-4. **Automation & Playbook Design**
+   - Integrated Wazuh with TheHive via webhook for automatic case creation.
+   - Created structured case templates in TheHive for consistent triage.
+4. **SOAR Workflow Automation**
    - Used Shuffle to create automated workflows that:
-    - Parse Wazuh alerts.
-    - Query external threat intelligence sources (VirusTotal, AbuseIPDB, etc.).
-    - Enrich incident cases in TheHive with IOC context.
-    - Automatically assign cases to analysts.
-5. **Testing & Validation**
-   - Simulated attacks using tools like Kali Linux and Metasploit.
-   - Verified alerts triggered in Wazuh, cases created in TheHive, and enrichment executed via Shuffle.
-6. **Documentation & GitHub Publishing**
-   - Created step-by-step project documentation, diagrams, and screenshots.
-   - Uploaded configuration files, playbooks, and workflow exports to GitHub for portfolio demonstration.
+    - Receive alerts from Wazuh.
+    - Query VirusTotal for IOC enrichment.
+    - Add enrichment results to TheHive cases.
+    - Notify via email or Slack of critical incidents.
+5. **Attack Simulation & Testing**
+   - Conducted simulated endpoint attacks using Metasploit and PowerShell scripts.
+   - Validated that:
+       - Velociraptor detected malicious activity.
+       - Wazuh generated alerts and sent them to TheHive.
+       - Shuffle enriched cases with threat intel and automated notifications.
+6. **Documentation & Publishing**
+   - Documented full setup instructions, configurations, and workflow exports.
+   - Uploaded project files, diagrams, and screenshots to GitHub for portfolio showcase.
 
    
 *Ref 1: Network Diagram*
